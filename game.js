@@ -58,7 +58,7 @@ let quote_length=0;
 function updateQuote() {
   quote_text.textContent = null;
   quote_length=current_quote.length;
-  fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
+  fetch("https://api.quotable.io/random").then(response => response.json()).then(result => {
     current_quote=result.content;
     
     console.log(quote_length);
